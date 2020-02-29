@@ -1,0 +1,260 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+article,
+section,
+aside,
+header,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+header{
+    
+a:hover {
+    text-decoration: none;
+}
+
+.header {
+    padding: 10px 0;
+    background: url(../../../img/Bg1.png) $primary-1 center center no-repeat;
+}
+
+.header div {
+    align-items: center;
+}
+
+.header p {
+    color: $primary-4;
+    font-family: $font-thin;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.header p>span {
+    font-weight: 400;
+    font-family: $font-regular;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    color: $base-light;
+    font-family: $font-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header div:nth-of-type(3)>a {
+    letter-spacing: 1.1px;
+}
+
+.sprite {
+    background-image: url(../../../img/sprite/css_sprites.png);
+    display: inline-block;
+}
+
+.login {
+    width: 41px;
+    height: 25px;
+    background-position: -10px -10px;
+    margin-left: 10px;
+}
+
+.chat {
+    width: 51px;
+    height: 30px;
+    background-position: -10px -55px;
+    margin-left: 10px;
+}
+
+.burger {
+    width: 65px;
+    height: 5px;
+    background-color: $base-light;
+    display: block;
+    position: relative;
+}
+
+.burger::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 5px;
+    top: 15px;
+    background-color: $base-light;
+    display: block;
+
+}
+
+.burger::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 5px;
+    top: -15px;
+    background-color: $base-light;
+    display: block;
+}
+
+
+/* menu */
+.menu {
+    background-color: $primary-3;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 10px 0;
+    }
+}
+
+.menu div {
+    align-items: center;
+}
+
+.menu a {
+    align-self: center;
+    color: $base-light;
+    font-family: $font-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.menu,
+span {
+    align-self: center;
+    color: $primary-4;
+    font-family: $font-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.menu .row div:nth-of-type(4) p,
+.menu .row div:nth-of-type(5) p {
+    text-align: right;
+    color: $primary-4;
+    font-family: $font-thin;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: none;
+    line-height: 20px;
+}
+
+.menu .row div:nth-of-type(4) p span,
+.menu .row div:nth-of-type(5) p span {
+    align-self: center;
+    color: $primary-4;
+    font-family: $font-regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+}
+
+.menu .row div:nth-of-type(5),
+.menu .row div:nth-of-type(4) {
+    padding: 0;
+}
+
+.menu .row ul li {
+    position: relative;
+    flex-grow: 1;
+}
+
+.menu .row ul li span {
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.menu .row ul a {
+    display: block;
+    text-align: center;
+}
+
+.menu ul li:hover,
+.menu ul a:hover {
+    background-color: $primary-4;
+    color: $primary-3;
+}
+
+.menu ul a:hover~span {
+    display: none;
+}
+
+.menu .burger {
+    padding: 0;
+}
+
+.menu .row div:nth-of-type(3) {
+    padding-right: 0;
+}
+
+.menu .row div a {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media(max-width:1200px) {
+    .header .row div {
+        padding: 0;
+    }
+
+    .header .row div:nth-of-type(1) {
+        padding: 0 15px 0 15px;
+    }
+
+    .header .row div:nth-of-type(3) {
+        padding: 0 15px 0 15px;
+    }
+
+    .menu .row ul {
+        padding: 0;
+    }
+
+    .menu .row ul a {
+        padding: 0 5px;
+    }
+}
+@media(max-width:580px) {
+    .header {
+        padding:9px 15px;
+    }
+    .menu{
+        padding: 15px;
+    }
+}
+@media(max-width:300px) {
+    .menu .row div:nth-of-type(5) p{
+        font-size: 15px;
+    }
+}
+
+}

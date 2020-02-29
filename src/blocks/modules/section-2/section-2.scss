@@ -1,0 +1,101 @@
+.section-2{
+    background: url(../../../img/Bg1.png) $primary-2 no-repeat center  ;
+    .container{
+        padding: 39px 0;
+        .triangle-container {
+            filter: drop-shadow(2px 5px 7px rgba(2, 68, 121, 0.75));
+            padding: 0;
+            h2 {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $primary-3;
+                font-family: $font-bold;
+                font-size: 28px;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: $primary-4;
+                line-height: 32px;
+            }
+            @media(max-width:390px){
+                h2{
+                    font-size:22px;
+                }
+                div:nth-of-type(2){
+                    span {
+                         font-size: 18px;
+                         text-transform: none;
+                         margin-bottom: 20px;
+                    }
+                }
+               
+            }
+
+            div {
+                width: 0;
+                height: 0;
+                border-top: 18px solid $primary-4;
+                border-right: 18px solid transparent;
+                margin: 0;
+                
+            }
+        }
+        div:nth-of-type(2){
+            text-align: center;
+            
+        }
+        span {
+            padding: 3px;
+            width: 100%;
+            color: #e9f7fe;
+            font-family: $font-narrow;
+             font-size: 24px;
+             text-transform: none;
+             margin-bottom: 30px;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            padding: 0 30px;
+            @media (max-width:991px){
+                grid-column-gap: 20px; 
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media (max-width:768px){
+                grid-template-columns: 1fr;
+            }
+            div{
+                margin: 18px 0;
+                span{
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $base-light;
+                    border-radius: 50%;
+                    margin: 0;
+                    p {
+                        color: $primary-3;
+                        font-family: $font-bold;
+                        font-size: 25px;
+                        font-weight: 700;
+                        padding: 0;
+                        border-bottom: none;
+                    }
+                }
+                p {
+                    text-align: left;
+                    color: $base-light;
+                    font-family: $font-narrow;
+                    font-size: 22px;
+                    padding: 18px 0;
+                    border-bottom: solid 2px $base-light;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.order-message{
+    background: url(../../../img/Bg1.png) #f4f6fa;
+    .container{
+        .new-message-copy{
+            div:nth-of-type(1){
+                padding: 15px 10px;
+                background-color: $primary-3;
+                h3 {
+                    color: #fdf9f1;
+                    font-family: $font-bold;
+                    font-size: 22px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            
+           div:nth-of-type(2){
+            border: 1px solid $primary-4;
+            padding: 15px 30px 15px 15px;
+            padding-right: 30px;
+            background-color: $base-light;
+            
+            
+            span {
+                color: #013056;
+                font-family: $font-narrow;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 36px;
+                text-transform: none;
+            }
+            button {
+                padding: 5px 20px;
+                background: $primary-3;
+                color: $base-light;
+                font-family: $font-bold;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                border: none;
+            }
+            .send-messages{
+                padding: 5px;
+            }
+           }
+           div:nth-of-type(2):hover{
+            background-color:  #fbebcd;
+        }
+
+           
+        }
+    }
+}
